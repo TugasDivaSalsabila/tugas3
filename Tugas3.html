@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="edit 3.css"
+</head>
+
+<body>
+    
+    <center><h1>KALKULATOR SEDERHANA</h1></center>
+
+   <center>
+    <table border="1" style="height: 8cm; width: 12cm;"
+    <tr>
+        <td>
+        <form name="kalkulator">
+        <h3><label for="nama">Bilangan Pertama</label>
+        <input type="number" id="nama" name="bilangan1"><br>
+        <br></h3>
+
+        <h3><label for="nama">Bilangan Kedua</label>
+        <input type="number" id="nama" name="bilangan2"><br>
+        <br></h3>
+
+        <center><h1>
+        <button type="submit" onclick="penjumlahan()">+</button>
+        <button type="submit" onclick="pengurangan()">-</button>
+        <button type="submit" onclick="perkalian()">x</button>
+        <button type="submit" onclick="pembagian()">/</button>
+        </h1></center>
+    </form>
+
+
+    <script>
+         function penjumlahan()
+        {
+            let a = parseFloat(document.kalkulator.bilangan1.value);
+            let b = parseFloat(document.kalkulator.bilangan2.value);
+            let c = a + b;
+            
+            alert(a +"  + " + b + " = " + c);
+        }
+        function pengurangan()
+        {
+            let a = document.kalkulator.bilangan1.value
+            let b = document.kalkulator.bilangan2.value
+            let c = a-b
+            
+            alert(a+" - "+b+" = "+c)
+        }
+        function perkalian()
+        {
+            let a = document.kalkulator.bilangan1.value
+            let b = document.kalkulator.bilangan2.value
+            let c = a*b
+            
+            alert(a+" x "+b+" = "+c)
+        }
+        function pembagian()
+        {
+            let a = document.kalkulator.bilangan1.value
+            let b = document.kalkulator.bilangan2.value
+            let c = a/b
+            
+            alert(a+" / "+b+" = "+c)
+        }
+
+
+       
+    </script></td></tr>
+    </table>
+   </center>
+
+</body>
+</html>
